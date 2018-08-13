@@ -11,6 +11,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var $ = jQuery.noConflict();
+            $(document).ready(function () {
+                init();
+                var showing_registration = true;
+        
+        
+        
+                $('#RegistrationButton').click(function () {
+                    if (showing_registration === true) {
+                        showing_registration = false;
+                        $("#RegistrationButton").prop('value', 'Register');
+                        // $("#ProjectButton").toggleClass('fa-ban fa-check');
+                    }
+                    else {
+                        showing_registration = true;
+                        $("#RegistrationButton").prop('value', 'Hide Registration');
+                    }
+                    $('.Registration').toggle('fast', function () {
+                    });
+                });
+            });
+            function init() {
+            }
+        </script>
 </head>
 <body>
 
@@ -28,10 +57,12 @@
                         Cyber Aware Day 2018
                     </h1>
                     <h2>
-                        <a href="http://citris.ucmerced.edu">CITRIS @ UC Merced</a>
+                        <a href="http://citris.ucmerced.edu">CITRIS @ UC Merced</a><br>
+                        <a href="http://sjsu.edu/">San Jose State University</a><br><br>
+                        Hosted by <a href="https://new.oportun.com/en/">Oportun</a>
                     </h2>
                     <p style="text-align:justify; font-weight:600; color:white;">
-                        A discussion of what cybersecurity is, and the opportunities it presents for students from all backgrounds
+                        A discussion of what cybersecurity and privacy is, and the opportunities it presents for students from all backgrounds
                     </p>
                     <ul class="actions">
                         <li><a href="#first" class="button special color1 circle icon fa-angle-right">Next</a></li>
@@ -50,7 +81,7 @@
                         The aim of Cyber Aware Day is to educate students from all backgrounds on the rapidly-developing world of cyber security. Industry experts will convene to discuss what cyber security is, what its challenges are, and the landscape of job opportunities that this space presents for students.
                     </p>
                     <p style="text-align:justify; font-weight:800; color:white;">
-                        All majors are encouraged to attend; lunch will be provided.
+                        All majors are encouraged to attend; lunch will be provided for registered attendants. Registration is free, just fill out the form after clicking "Register" on the next slide!
                     </p>
                 </div>
                 <div class="image filtered tinted" data-position="top left">
@@ -63,9 +94,10 @@
                 <div class="intro joined">
                     <h2 class="major" style="text-align:justify">Join us! Everyone plays a role in cyber security</h2>
                     <ul class="actions">
-
-                        <li style="margin:1em 0em 0em 0em"><a href="#" style="font-weight:800; " class="button special color2 icon fa-user-plus">&nbsp; &nbsp;&nbsp; &nbsp; Register&nbsp; &nbsp; &nbsp; &nbsp;</a></li>
-                        <li style="margin:1em 0em 0em 0em"><a href="#contact" style="font-weight:800; " class="button icon fa-diamond">Become a Sponsor</a></li>
+                        <input style="background:white; font-weight:800" id="RegistrationButton" type="button" name="answer" value="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register&nbsp; &nbsp; &nbsp; &nbsp; " class="button special color2" />&nbsp;&nbsp;&nbsp;
+                
+                       <!-- <li style="margin:1em 0em 0em 0em"><a id="RegistrationButton" style="font-weight:800; " class="button special color2 icon fa-user-plus">&nbsp; &nbsp;&nbsp; &nbsp; Register&nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+                       --><li style="margin:1em 0em 0em 0em"><a href="#contact" style="font-weight:800; " class="button icon fa-diamond">Become a Sponsor</a></li>
                         <li style="margin:1em 0em 0em 0em"><a href="#contact" style="font-weight:800; " class="button icon fa-tv">Host a Demo Table</a></li>
                     </ul>
                 </div>
@@ -80,13 +112,18 @@
                     </ul>
                 </div>
             </section>
+            <section class="panel Registration" style="display:none">     
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerpHvO1wucW5f3wOa8y9chlnJzhRDdNjNtKnpVzC7UIHo3AA/viewform?embedded=true" width="600" height="614" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </section>
 
             <!-- Panel (Spotlight) -->
             <section class="panel spotlight large left">
                 <div class="content span-5">
                     <h2 class="major">Schedule of Events</h2>
                     <p style="text-align:justify; font-weight:600; color:white;">
-                        Date: October 2018
+                        Date: Wednesday, November 14, 2018
+                        <br>
+                        Time: 10:00 AM - 3:15 PM PDT
                         <br />
                         Location: California Room, UC Merced
                     </p>
@@ -128,6 +165,7 @@
                 </div>
             </section>
 
+           
             <!-- Panel -->
             <section class="panel">
                 <div class="intro color2">
@@ -217,10 +255,6 @@
 
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
