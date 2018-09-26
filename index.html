@@ -5,43 +5,47 @@
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
 <head>
     <title>Cyber Aware Day</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script>
-            var $ = jQuery.noConflict();
-            $(document).ready(function () {
-                init();
-                var showing_registration = false;
-        
-        
-        
-                $('#RegistrationButton').click(function () {
-                    if (showing_registration === true) {
-                        showing_registration = false;
-                        $("#RegistrationButton").prop('value', 'Register for Lunch!');
-                        // $("#ProjectButton").toggleClass('fa-ban fa-check');
-                    }
-                    else {
-                        showing_registration = true;
-                        $("#RegistrationButton").prop('value', '~ Hide Registration');
-                        
-                    }
-                    $('.Registration').toggle('fast', function () {
-                    });
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        var $ = jQuery.noConflict();
+        $(document).ready(function () {
+            init();
+            var showing_registration = false;
+
+
+
+            $('#RegistrationButton').click(function () {
+                if (showing_registration === true) {
+                    showing_registration = false;
+                    $("#RegistrationButton").prop('value', 'Register for Lunch!');
+                    // $("#ProjectButton").toggleClass('fa-ban fa-check');
+                }
+                else {
+                    showing_registration = true;
+                    $("#RegistrationButton").prop('value', '~ Hide Registration');
+
+                }
+                $('.Registration').toggle('fast', function () {
                 });
             });
-            function init() {
-            }
-        </script>
+        });
+        function init() {
+        }
+    </script>
 </head>
+
 <body>
 
 
@@ -53,21 +57,31 @@
 
             <!-- Panel (Banner) -->
             <section class="panel banner right">
-                <div class="content color1 span-3-75" >
-                    <h1 class="major"  >
-                        CyberAware Day 2018
+                <div class="content color1 span-3-75">
+                    <h1 class="major">
+                        Cyber Aware Day 2018
                     </h1>
                     <h2>
-                        <a href="http://citris.ucmerced.edu">University of California, Merced</a><br>
-                        <a href="http://sjsu.edu/">San Jose State University</a><br><br>
+                        <a href="http://citris.ucmerced.edu">University of California, Merced</a>
+                        <br>
+                        <a href="http://sjsu.edu/">San Jose State University</a>
+                        <br>
+                        <br>
                     </h2>
                     <p style="text-align:justify; font-weight:600; color:white;">
-                        <br>Exploring cyber security opportunities for students of all backgrounds
+                        Join us on November 14th, 2018 as we explore cyber security and privacy opportunities for students of all backgrounds!
+
                     </p>
                     <ul class="actions">
-                        <li><a href="#info" class="button special color1 circle">Info</a></li>
-                        <li><a href="#register" class="button special color1 circle">Register</a></li>
-                        <li><a href="#schedule" class="button special color1 circle">Schedule</a></li>
+                        <li>
+                            <a href="#info" class="button special color1 circle">Info</a>
+                        </li>
+                        <li>
+                            <a href="#register" class="button special color1 circle">Register</a>
+                        </li>
+                        <li>
+                            <a href="#schedule" class="button special color1 circle">Schedule</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="image filtered span-1-75" data-position="25% 25%">
@@ -80,11 +94,14 @@
                 <div class="content span-7" style="background-image: inherit;">
                     <h2 class="major">Cyber security and privacy: A world of opportunities for every student</h2>
                     <p style="text-align:justify; font-weight:600; color:white;">
-                        CyberAware Day is a unique event hosted in partnership between UC Merced and San Jose State University to raise awareness around the cyber security sector and related opportunities for students of all backgrounds. 
-                        <br><br>
-                        Join an awesome line-up of speakers and industry experts who know first-hand that everybody belongs in security and hear their stories of how they found their way to cyber security. You’ll have an opportunity to also interact directly with like-minded companies who know the value of diversity.
+                        Cyber Aware Day is a unique event hosted in partnership between UC Merced and San Jose State University to raise awareness
+                        around the cyber security sector and related opportunities for students of all backgrounds.
+                        <br>
+                        <br> Join an awesome line-up of speakers and industry experts who know first-hand that everybody belongs
+                        in security and hear their stories of how they found their way to cyber security. You’ll have an
+                        opportunity to also interact directly with like-minded companies who know the value of diversity.
                     </p>
-                    
+
                 </div>
                 <div class="image filtered tinted" data-position="top left">
                     <img src="images/board.jpg" alt="" />
@@ -94,42 +111,75 @@
             <!-- Panel -->
             <section id="register" class="panel" style="background-color: rgb(64,64,64); background-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.125) 50%, rgba(0, 0, 0, 0.175) 100%);">
                 <div class="intro joined">
-                    <h2 class="major" style="text-align:justify">Join us! Everyone plays <br>a role in cyber security</h2>
+                    <h2 class="major" style="text-align:justify">Join us!
+                        <br>Everyone plays a role in cyber security and privacy</h2>
                     <p style="text-align:justify; font-weight:800; color:white;">
-                        All majors are encouraged to attend; <br>lunch provided ONLY for registered attendants.
+                        All majors are encouraged to attend;
+                        <br>lunch provided ONLY for registered attendants.
                     </p>
                     <ul class="actions">
-                        <a href="#RegistrationSection"><input style="background:white; font-weight:800" id="RegistrationButton" type="button" name="answer" value="Register for Lunch!" class="button special color2" /></a>
-                       <!-- <li style="margin:1em 0em 0em 0em"><a id="RegistrationButton" style="font-weight:800; " class="button special color2 icon fa-user-plus">&nbsp; &nbsp;&nbsp; &nbsp; Register&nbsp; &nbsp; &nbsp; &nbsp;</a></li>
-                       --><li style="margin:1em 0em 0em 0em"><a href="#contact" style="font-weight:800; " class="button icon fa-diamond">Become a Sponsor</a></li>
-                        <li style="margin:1em 0em 0em 0em"><a href="#contact" style="font-weight:800; " class="button icon fa-tv">Host a Demo Table</a></li>
+                        <a href="#RegistrationSection">
+                            <input style="background:white; font-weight:800" id="RegistrationButton" type="button" name="answer" value="Register for Lunch!"
+                                class="button special color2" />
+                        </a>
+                        <!-- <li style="margin:1em 0em 0em 0em"><a id="RegistrationButton" style="font-weight:800; " class="button special color2 icon fa-user-plus">&nbsp; &nbsp;&nbsp; &nbsp; Register&nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+                       -->
+                        <li style="margin:1em 0em 0em 0em">
+                            <a href="#contact" style="font-weight:800; " class="button icon fa-diamond">Become a Sponsor</a>
+                        </li>
+                        <li style="margin:1em 0em 0em 0em">
+                            <a href="#contact" style="font-weight:800; " class="button icon fa-tv">Host a Demo Table</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="inner">
                     <ul class="grid-icons three connected">
-                        <li><span class="icon fa-floppy-o"><span class="label">Lorem</span></span></li>
-                        <li><span class="icon fa-chain"><span class="label">Ipsum</span></span></li>
-                        <li><span class="icon fa-cog"><span class="label">Dolor</span></span></li>
-                        <li><span class="icon fa-comments"><span class="label">Sit</span></span></li>
-                        <li><span class="icon fa-database"><span class="label">Amet</span></span></li>
-                        <li><span class="icon fa-code"><span class="label">Nullam</span></span></li>
+                        <li>
+                            <span class="icon fa-floppy-o">
+                                <span class="label">Lorem</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="icon fa-chain">
+                                <span class="label">Ipsum</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="icon fa-cog">
+                                <span class="label">Dolor</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="icon fa-comments">
+                                <span class="label">Sit</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="icon fa-database">
+                                <span class="label">Amet</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="icon fa-code">
+                                <span class="label">Nullam</span>
+                            </span>
+                        </li>
                     </ul>
                 </div>
             </section>
-            <section class="panel Registration" style="display:none" id ="RegistrationSection">     
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerpHvO1wucW5f3wOa8y9chlnJzhRDdNjNtKnpVzC7UIHo3AA/viewform?embedded=true" width="600" height="614" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <section class="panel Registration" style="display:none" id="RegistrationSection">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerpHvO1wucW5f3wOa8y9chlnJzhRDdNjNtKnpVzC7UIHo3AA/viewform?embedded=true"
+                    width="600" height="614" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </section>
 
             <!-- Panel (Spotlight) -->
-            <section id = "schedule" class="panel spotlight large left">
+            <section id="schedule" class="panel spotlight large left">
                 <div class="content span-5">
                     <h2 class="major">Schedule of Events, Merced</h2>
                     <p style="text-align:justify; font-weight:600; color:white;">
                         Date: Wednesday, November 14, 2018
-                        <br>
-                        Time: 10:00 AM - 3:00 PM PDT
-                        <br />
-                        Location: California Room, UC Merced
+                        <br> Time: 10:00 AM - 3:00 PM PDT
+                        <br /> Location: California Room, UC Merced
                     </p>
                     <table>
                         <tr>
@@ -164,10 +214,8 @@
                     <h2 class="major">Schedule of Events, San Jose</h2>
                     <p style="text-align:justify; font-weight:600; color:white;">
                         Date: Wednesday, November 14, 2018
-                        <br>
-                        Time: 10:00 AM - 3:00 PM PDT
-                        <br />
-                        Location: San Jose State University, room TBD
+                        <br> Time: 10:00 AM - 3:00 PM PDT
+                        <br /> Location: San Jose State University, room TBD
                     </p>
                     <table>
                         <tr>
@@ -203,7 +251,7 @@
                 </div>
             </section>
 
-           
+
             <!-- Panel -->
             <section class="panel">
                 <div class="intro color2 span-3">
@@ -211,26 +259,43 @@
                     <p style="text-align:justify; font-weight:600; color:white;">
                         We wish to thank Autodesk for being this year's Cyber Aware Day Event Sponsor.
                     </p>
-                    
-                    <a href="images/gallery/fulls/01.jpg" class="image"><img src="images/autodesk_unpadded.png" alt="" /></a>
-                <hr>
+
+                    <a href="images/gallery/fulls/01.jpg" class="image">
+                        <img src="images/autodesk_unpadded.png" alt="" />
+                    </a>
+                    <hr>
                     <h2 class="major">Participating Sponsors</h2>
                     <p style="text-align:justify; font-weight:600; color:white;">
-                        We also wish to thank the organizations and corporations who make this event possible, helping us raise awareness of the need for cybersecurity and how we can engage students of all disciplines in this emerging field.
+                        We also wish to thank the organizations and corporations who make this event possible, helping us raise awareness of the
+                        need for cybersecurity and how we can engage students of all disciplines in this emerging field.
                     </p>
                 </div>
                 <div class="gallery">
                     <div class="group span-3">
-                        <a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="images/sumo.png" alt="" /></a>
-                        <a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="images/ucm.png" alt="" /></a>
-                        <a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/sjsu.png" alt="" /></a>
+                        <a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom">
+                            <img src="images/sumo.png" alt="" />
+                        </a>
+                        <a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center">
+                            <img src="images/ucm.png" alt="" />
+                        </a>
+                        <a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom">
+                            <img src="images/sjsu.png" alt="" />
+                        </a>
                     </div>
                     <div class="group span-4-5">
-                        <a href="images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="images/citris.png" alt="" /></a>
-                       
-                        <a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="images/oportun.jpg" alt="" /></a>
-                        <a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/sentinel.png" alt="" /></a>
-                        <a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/okta.png" alt="" /></a>
+                        <a href="images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center">
+                            <img src="images/citris.png" alt="" />
+                        </a>
+
+                        <a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom">
+                            <img src="images/oportun.jpg" alt="" />
+                        </a>
+                        <a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom">
+                            <img src="images/sentinel.png" alt="" />
+                        </a>
+                        <a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom">
+                            <img src="images/okta.png" alt="" />
+                        </a>
                         <!-- <a href="images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="images/citris.png" alt="" /></a> -->
                     </div>
                 </div>
@@ -241,33 +306,50 @@
                 <div style="width:50rem; text-align:justify" id="contact" class="intro color4">
                     <h3 class="major">Support this important event! </h3>
                     <p>
-                        Are you a company or organization looking to get involved with students of diverse backgrounds and support expanding the cybersecurity sector? Join us on Wednesday, November 14! 
+                        Are you a company or organization looking to get involved with students of diverse backgrounds and support expanding the
+                        cybersecurity sector? Join us on Wednesday, November 14!
                         <br>
                     </p>
                     <h4 class="major">Sponsor the event:</h4>
                     <p style="margin:0em">
-                        Help make this event possible by underwriting some of the costs of hosting this event.  
-                        <br><br>
+                        Help make this event possible by underwriting some of the costs of hosting this event.
+                        <br>
+                        <br>
                     </p>
                     <h4 class="major">Host a networking table ($1,000 - $2,000):</h4>
                     <p style="margin:0em">
-                        Host a table at one or both campuses to share your company and job opportunities with interested students. 
-                        <br><br>
-                    </p>                    
+                        Host a table at one or both campuses to share your company and job opportunities with interested students.
+                        <br>
+                        <br>
+                    </p>
                     <h4 class="major">Speak at our event:</h4>
                     <p style="margin:0em">
-                        We are looking for panelists and speakers on both campuses! If you are interested in joining our panels and sharing your stories, please contact us. 
-                        If you are interested in any of the above or have a creative way you would like to participate in CyberAware Day, <a href="mailto:sumin.lee@oportun.com">please contact Sumin Lee</a>. 
+                        We are looking for panelists and speakers on both campuses! If you are interested in joining our panels and sharing your
+                        stories, please contact us. If you are interested in any of the above or have a creative way you
+                        would like to participate in Cyber Aware Day,
+                        <a href="mailto:sumin.lee@oportun.com">please contact Sumin Lee</a>.
                     </p>
                 </div>
                 <div class="inner columns divided">
-                    
+
                     <div class="span-1-5">
                         <ul class="contact-icons color1">
-                            <li class="icon fa-university"><a href="http://ucmerced.edu"><span class="label">UC Merced</span></a></li>
-                            <li class="icon fa-university"><a href="http://sjsu.edu/"><span class="label">SJSU</span></a></li>
-                            <li class="icon fa-envelope"><a href="mailto:citris@ucmerced.edu"><span class="label">Contact Us</span></a></li>
-                         </ul>
+                            <li class="icon fa-university">
+                                <a href="http://ucmerced.edu">
+                                    <span class="label">UC Merced</span>
+                                </a>
+                            </li>
+                            <li class="icon fa-university">
+                                <a href="http://sjsu.edu/">
+                                    <span class="label">SJSU</span>
+                                </a>
+                            </li>
+                            <li class="icon fa-envelope">
+                                <a href="mailto:citris@ucmerced.edu">
+                                    <span class="label">Contact Us</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -277,4 +359,5 @@
 
 
 </body>
+
 </html>
