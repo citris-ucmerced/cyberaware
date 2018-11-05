@@ -23,13 +23,15 @@
         $(document).ready(function () {
             init();
             var showing_registration = false;
+            var showing_registration1 = false;
+            
 
 
 
             $('#RegistrationButton').click(function () {
                 if (showing_registration === true) {
                     showing_registration = false;
-                    $("#RegistrationButton").prop('value', 'Register for Event!');
+                    $("#RegistrationButton").prop('value', 'Register: Merced!');
                     // $("#ProjectButton").toggleClass('fa-ban fa-check');
                 }
                 else {
@@ -38,6 +40,22 @@
 
                 }
                 $('.Registration').toggle('fast', function () {
+                });
+            });
+            
+
+            $('#RegistrationButton2').click(function () {
+                if (showing_registration1 === true) {
+                    showing_registration1 = false;
+                    $("#RegistrationButton2").prop('value', 'Register: SJSU!');
+                    // $("#ProjectButton").toggleClass('fa-ban fa-check');
+                }
+                else {
+                    showing_registration1 = true;
+                    $("#RegistrationButton2").prop('value', '~ Hide Registration');
+
+                }
+                $('.Registration2').toggle('fast', function () {
                 });
             });
         });
@@ -122,9 +140,13 @@
                     </p>
                     <ul class="actions">
                         <a href="#RegistrationSection">
-                            <input style="background:white; font-weight:800" id="RegistrationButton" type="button" name="answer" value="Register for Event!"
+                            <input style="background:white; font-weight:800" id="RegistrationButton" type="button" name="answer" value="Register: &nbsp; &nbsp;Merced!"
                                 class="button special color2" />
                         </a>
+                        <li style="margin:1em 0em 0em 0em"><a href="#RegistrationSection2">
+                            <input style="background:white; font-weight:800" id="RegistrationButton2" type="button" name="answer" value="Register: &nbsp; &nbsp; &nbsp; &nbsp;SJSU!"
+                                class="button special color2" />
+                        </a></li>
                         <!-- <li style="margin:1em 0em 0em 0em"><a id="RegistrationButton" style="font-weight:800; " class="button special color2 icon fa-user-plus">&nbsp; &nbsp;&nbsp; &nbsp; Register&nbsp; &nbsp; &nbsp; &nbsp;</a></li>
                        -->
                         <li style="margin:1em 0em 0em 0em">
@@ -174,7 +196,10 @@
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerpHvO1wucW5f3wOa8y9chlnJzhRDdNjNtKnpVzC7UIHo3AA/viewform?embedded=true"
                     width="600" height="614" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </section>
-
+            <section class="panel Registration2" style="display:none" id="RegistrationSection2">
+                <iframe src="https://docs.google.com/forms/d/1Xo-6Y614VOZMP6oAjW3vl03PB7gjbxGj_RvR86EM8qw/viewform?embedded=true"
+                    width="600" height="614" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </section>
             <!-- Panel (Spotlight) -->
             <section id="schedule" class="panel spotlight large left">
                 <div class="content span-5">
